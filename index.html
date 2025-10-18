@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farhan's Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="./Assets/roundPFP.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <p class="navbar-brand myNameP"><span class="myNameSpan">Farhan</span>-dev</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto gap-4 navLinks">
+                        <a class="nav-link active homeLink" href="#">Home</a>
+                        <a class="nav-link aboutLink" href='#aboutMe'>About</a>
+                        <a class="nav-link projectsLink" href="#MyProjects">Projects</a>
+                        <a class="nav-link contactLink" href="#GetInTouch">Contact</a>
+                    </div>
+                    <!-- Navbar navigation -->
+                    <div class="navbar-nav navSocialIcons">
+                        <div class="githubDiv">
+                            <a href="https://github.com/muhammadfarhan145/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                        </div>
+                        <div class="instagramDiv">
+                            <a href="https://www.instagram.com/skibidi_farhan_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        </div>
+                        <div class="linkedinDiv">
+                            <a href="https://www.linkedin.com/in/muhammad-farhan-000b1438a/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="introducingMyself" id="introducingMyself">
+        <div class="IntroductionDiv">
+            <div class="nameSkillsCVSocials">
+                <p class="myName">Hello, I'm Farhan</p>
+                <h2 class="mySkills"><span id="mySkills"></span></h2>
+                <p class="myGoals">Expanding skills and discovering new ways to innovate.</p>
+                <a href="./Assets/FarhanCV.pdf" download target="_blank">
+                    <button class="downloadCVBtn">Download CV</button>
+                </a>
+                <div class="socialIconsDiv">
+                    <div class="githubDiv">
+                        <a href="https://github.com/muhammadfarhan145/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+                    <div class="instagramDiv">
+                        <a href="https://www.instagram.com/skibidi_farhan_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    </div>
+                    <div class="linkedinDiv">
+                        <a href="https://www.linkedin.com/in/muhammad-farhan-000b1438a/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </div>
+                    <div class="whatsappDiv">
+                        <a href="https://wa.me/+923212786705" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="myPfpDiv">
+                <img src="./Assets/farhanPfp.jpg" alt="My Profile Picture" class="img-fluid myPfpImg">
+            </div>
+        </div>
+    </section>
+    <!-- About Me Section -->
+    <section class="aboutMe" id="aboutMe">
+        <h1 class="aboutMe_Heading">About Me</h1>
+        <div class="aboutSkills_CodeBoxDiv">
+            <div class="aboutAndSkills">
+                <p class="aboutMeP">I’m Farhan, a passionate frontend developer who loves crafting clean, responsive, 
+                and user-friendly websites using HTML, CSS, JavaScript, and Bootstrap. Always learning, building, and exploring new ideas.</p>
+                <div class="SkillsandTechnology">
+                    <h5>Skills & Technologies</h5>
+                    <div class="skillsTabs">
+                        <div class="skillTab">HTML</div>
+                        <div class="skillTab">CSS</div>
+                        <div class="skillTab">JavaScript</div>
+                        <div class="skillTab">Bootstrap</div>
+                        <div class="skillTab">Web Development</div>
+                        <div class="skillTab">Frontend Development</div>
+                        <div class="skillTab">Supabase</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ABOUT ME CODE BOX -->
+            <div class="codeBoxDiv">
+                <div class="codeBox">
+                    <p class="codeLines">const developer = {</p>
+                    <p class="codeLines">  name: "Farhan",</p>
+                    <p class="codeLines">  role: "Frontend Developer",</p>
+                    <p class="codeLines">  skills: HTML, CSS, JavaScript, Bootstrap,</p>
+                    <p class="codeLines">  learning: "React, Supabase",</p>
+                    <p class="codeLines">  goals: "Learn React, Contribute to open source"</p>
+                    <p class="codeLines">};</p>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <!-- My Projects Section -->
+    <section class="projects" id="MyProjects">
+        <h1 class="myProjectsHeading">My Projects</h1>
+        <div class="projectCards">
+            <!-- My Project Cards -->
+            <div class="projectCard">
+                <img src="./Assets/ticTacToeAssignmentImg.png" alt="Project 1" class="projectImage img-fluid">
+                <h3 class="projectTitle">Tic Tac Toe</h3>
+                <p class="projectDescription">A simple and interactive Tic Tac Toe game built with HTML, CSS, and JavaScript.</p>
+                <div class="projectCardBtns">
+                    <a href="https://github.com/muhammadfarhan145/SMIT-modern-web-and-app/tree/master/SMIT%20b%2316%20Assignments/JS%20all%20assignments/Assignment%2013" class="codeLink" target="_blank">View Code</a>
+                    <a href="https://jsassignment13.netlify.app/" class="projectLink" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <img src="./Assets/postAppAssignmentImg.png" alt="Project 1" class="projectImage img-fluid">
+                <h3 class="projectTitle">Posting App</h3>
+                <p class="projectDescription">A Posting App made with HTML, CSS, Supabase, Bootstrap, and JavaScript.</p>
+                <div class="projectCardBtns">
+                    <a href="https://github.com/muhammadfarhan145/SUPABASE-Assignments/tree/master/Posting%20App%20Assignment" class="codeLinkBtn" target="_blank">View Code</a>
+                    <a href="https://jssupabase3assignment.netlify.app/" class="projectLinkBtn" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <img src="./Assets/EcommerceAssignmentImg.png" alt="Project 1" class="projectImage img-fluid">
+                <h3 class="projectTitle">Ecommerce Website</h3>
+                <p class="projectDescription">A Ecommerce website made with HTML, CSS, Supabase, and JavaScript.</p>
+                <div class="projectCardBtns">
+                    <a href="https://github.com/muhammadfarhan145/SUPABASE-Assignments/tree/master/Ecommerce%20Assignment" class="codeLink" target="_blank">View Code</a>
+                    <a href="https://jssupabase2assignment.netlify.app/" class="projectLink" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get In Touch Section -->
+    <section class="getInTouch" id="GetInTouch">
+        <h1 class="getInTouchHeading">Get In Touch</h1>
+        <div class="MyContact_contactFormDiv">
+            <div class="MyContactInfo">
+                <p class="Info_p">Let's collaborate! I’m always excited to connect with creative minds, discuss new ideas, and work together on projects that push boundaries. Whether it’s building something innovative, improving an existing concept, or bringing your vision to life, I’d love to be a part of your journey.</p>
+                <div class="contactsSources">
+                    <p class="email_P"><span><i class="fa-solid fa-envelope emailIcon"></i></span>   muhammadfarhanworks@gmail.com</p>
+                    <p class="phone_P"><span><i class="fa-solid fa-phone phoneIcon"></i></span>   +923212786705</p>
+                    <p class="location_P"><span><i class="fa-solid fa-location-dot locationIcon"></i></span>   Pakistan</p>
+                </div>
+                <!-- Navigation social media links -->
+                <div class="socialMediaLinks">
+                    <div class="linkedinDiv">
+                        <a href="https://www.linkedin.com/in/muhammad-farhan-000b1438a/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                    </div>
+                    <div class="githubDiv">
+                        <a href="https://github.com/muhammadfarhan145/" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+                    </div>
+                    <div class="whatsappDiv">
+                        <a href="https://wa.me/+923212786705" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="MyContact_Form">
+                <form action="https://formsubmit.co/muhammadfarhanworks@gmail.com" method="POST">
+                    <div class="formGroup">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="formGroup">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="formGroup">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submitBtn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2025 Farhan's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+<!-- Additional Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed("#mySkills", {
+    strings: ["Code Explorer.", "a Frontend Developer.", "Web Developer.", "JavaScript Enthusiast."],
+    typeSpeed: 100,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</html>

@@ -1,0 +1,704 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 70px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px 15px;
+  color: black !important;
+  border-bottom: 1px solid #fff;
+}
+
+.myNameP {
+  font-size: 18px;
+  color: #fff !important;
+  margin: 0;
+}
+
+.myNameSpan {
+  color: red;
+}
+
+.navLinks a {
+  font-size: 14px;
+  color: #fff !important;
+}
+
+.navLinks a:hover {
+  text-decoration: 2px solid underline red !important;
+}
+
+.navSocialIcons {
+  gap: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navSocialIcons div {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navSocialIcons div:hover {
+  border: 1px solid red;
+}
+
+.navSocialIcons a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  background-color: red;
+}
+
+/* Introduction Section */
+.IntroductionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  margin: 30px 10px;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.myName {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.mySkills {
+  font-size: 20px;
+  color: #ff4c4c;
+  margin-top: 5px;
+}
+
+.myGoals {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.downloadCVBtn {
+  margin-top: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  background-color: #1e1e1e;
+  border: 2px solid red;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: red;
+  text-shadow: 0 0 20px red;
+}
+
+.downloadCVBtn:hover {
+  background-color: rgb(19, 8, 8);
+  color: #ccc;
+  border: 2px solid #ff0000;
+  text-shadow: none;
+}
+
+.socialIconsDiv {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+
+.socialIconsDiv div {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+}
+
+.socialIconsDiv div:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+.socialIconsDiv div a {
+  color: white;
+  text-decoration: none;
+}
+
+.myPfpDiv {
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.myPfpImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  object-fit: cover;
+  border: 2px solid red;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.4);
+  margin: 10px auto;
+}
+
+/* About Me Section */
+.aboutMe {
+  margin: 30px 10px;
+  max-width: 100%;
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.aboutMe_Heading {
+  font-size: 20px;
+  font-weight: 650;
+  color: #fff;
+  text-decoration: underline red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.aboutSkills_CodeBoxDiv {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.aboutAndSkills {
+  width: 100%;
+}
+
+.aboutMeP {
+  font-size: 12px;
+  color: #ccc;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.skillsTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.skillTab {
+  background-color: #212529;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  cursor: default;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.skillTab:hover {
+  background-color: red;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.4);
+}
+
+.codeBoxDiv {
+  width: 100%;
+}
+
+.codeBox {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.codeLines {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  margin: 0;
+  color: #ff0000;
+  line-height: 1.4;
+}
+
+/* Projects Section */
+.projects {
+  margin: 30px 10px;
+  max-width: 100%;
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.myProjectsHeading {
+  font-size: 20px;
+  font-weight: 650;
+  color: #fff;
+  text-decoration: underline red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.projectCards {
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 100px auto;
+}
+
+.projectCard {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 280px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projectTitle {
+  font-size: 16px;
+  color: #ff4c4c;
+  margin: 8px;
+}
+
+.projectDescription {
+  font-size: 12px;
+  color: #ccc;
+  margin: 0 8px 8px;
+  line-height: 1.3;
+}
+
+.projectCardBtns {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  background-color: #212529;
+}
+
+.projectCardBtns a {
+  padding: 6px 10px;
+  font-size: 12px;
+  background-color: #1e1e1e;
+  border: 2px solid red;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: red;
+  text-decoration: none;
+}
+
+.projectCardBtns a:hover {
+  background-color: rgb(19, 8, 8);
+  color: #ccc;
+  border: 2px solid #ff0000;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Get In Touch Section */
+.getInTouch {
+  margin: 30px 10px;
+  max-width: 100%;
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.getInTouchHeading {
+  font-size: 20px;
+  font-weight: 650;
+  color: #fff;
+  text-decoration: underline red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.MyContact_contactFormDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.MyContactInfo {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Info_p {
+  font-size: 12px;
+  color: #ccc;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.contactsSources {
+  margin-top: 10px;
+}
+
+.contactsSources p {
+  font-size: 8px;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.contactsSources span {
+  color: red;
+  font-weight: 600;
+}
+
+.socialMediaLinks {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.socialMediaLinks div {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+}
+
+.socialMediaLinks div:hover {
+  border: 1px solid red;
+  color: red;
+}
+
+.socialMediaLinks div a {
+  color: white;
+  text-decoration: none;
+}
+
+.MyContact_Form {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.MyContact_Form input,
+.MyContact_Form textarea {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #212529;
+  color: #fff;
+  font-size: 12px;
+}
+
+.MyContact_Form input::placeholder,
+.MyContact_Form textarea::placeholder {
+  color: #aaa;
+}
+
+.submitBtn {
+  padding: 6px 12px;
+  font-size: 12px;
+  background-color: #1e1e1e;
+  border: 2px solid red;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: red;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #1e1e1e;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  font-size: 11px;
+}
+
+@media (max-width: 991.98px) {
+  .navSocialIcons {
+    display: none;
+  }
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 15px 50px;
+  }
+
+  .myNameP {
+    font-size: 24px;
+  }
+
+  .navLinks a {
+    font-size: 18px;
+  }
+
+  .navSocialIcons div {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Introduction Section */
+  .IntroductionDiv {
+    flex-direction: row;
+    padding: 40px 20px;
+    margin: 70px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .myName {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .mySkills {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .myGoals {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .downloadCVBtn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .socialIconsDiv {
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  .socialIconsDiv div {
+    width: 40px;
+    height: 40px;
+  }
+
+  .myPfpImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: 0;
+  }
+
+  /* About Me Section */
+  .aboutMe {
+    margin: 130px auto;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .aboutMe_Heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .aboutSkills_CodeBoxDiv {
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 20px;
+  }
+
+  .aboutAndSkills {
+    width: 50%;
+  }
+
+  .aboutMeP {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .skillsTabs {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .skillTab {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .codeBoxDiv {
+    width: 50%;
+  }
+
+  .codeLines {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Projects Section */
+  .projects {
+    margin: 130px auto;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .myProjectsHeading {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .projectCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .projectCard {
+    width: 280px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+    margin: 15px;
+  }
+
+  .projectDescription {
+    font-size: 14px;
+    margin: 0 15px 15px;
+    line-height: 1.4;
+  }
+
+  .projectCardBtns {
+    padding: 15px 0;
+  }
+
+  .projectCardBtns a {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .projectCard img {
+    height: 160px;
+  }
+
+  /* Get In Touch Section */
+  .getInTouch {
+    margin: 130px auto;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .getInTouchHeading {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .MyContact_contactFormDiv {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .MyContactInfo {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .Info_p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .contactsSources {
+    margin-top: 20px;
+  }
+
+  .contactsSources p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .socialMediaLinks {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  .socialMediaLinks div {
+    width: 40px;
+    height: 40px;
+  }
+
+  .MyContact_Form {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .MyContact_Form input,
+  .MyContact_Form textarea {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .submitBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
