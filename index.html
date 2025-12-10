@@ -23,6 +23,7 @@
                         <a class="nav-link active homeLink" href="#">Home</a>
                         <a class="nav-link aboutLink" href='#aboutMe'>About</a>
                         <a class="nav-link projectsLink" href="#MyProjects">Projects</a>
+                        <a class="nav-link projectsLink" href="#MyCertificates">Certificates</a>
                         <a class="nav-link contactLink" href="#GetInTouch">Contact</a>
                     </div>
                     <!-- Navbar navigation -->
@@ -154,15 +155,65 @@
             </div>
             <div class="projectCard">
                 <img src="./Assets/React1webImg.png" alt="Project 5" class="projectImage img-fluid">
-                <h3 class="projectTitle">React Website</h3>
-                <p class="projectDescription">A basic but clean React web UI where I learned how to structure components..</p>
+                <h3 class="projectTitle">Counter App</h3>
+                <p class="projectDescription">A basic but clean React web UI where I learned how to structure components.</p>
                 <div class="projectCardBtns">
                     <a href="https://github.com/muhammadfarhan145/React-Assignments/tree/master/Assignment%201" class="codeLink" target="_blank">View Code</a>
                     <a href="https://react1assignment.netlify.app/" class="projectLink" target="_blank">View Project</a>
                 </div>
             </div>
+            <div class="projectCard">
+                <img src="./Assets/React2webImg.png" alt="Project 5" class="projectImage img-fluid">
+                <h3 class="projectTitle">Basic Learning Management System (LMS)</h3>
+                <p class="projectDescription">My first multiple pages web made with React, Supabase Auth.</p>
+                <div class="projectCardBtns">
+                    <a href="https://github.com/muhammadfarhan145/React-Assignments/tree/master/Assignment%202" class="codeLink" target="_blank">View Code</a>
+                    <a href="https://react2assignment.netlify.app/" class="projectLink" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <img src="./Assets/reactcarweb.png" alt="Project 5" class="projectImage img-fluid">
+                <h3 class="projectTitle">Single Page React car website</h3>
+                <p class="projectDescription">My second Single Page static website made with clean UI and React, Bootstrap etc.</p>
+                <div class="projectCardBtns">
+                    <a href="https://github.com/muhammadfarhan145/Practice/tree/master/reactCarWeb" class="codeLink" target="_blank">View Code</a>
+                    <a href="https://reactcarweb.netlify.app/" class="projectLink" target="_blank">View Project</a>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- Certificates Section -->
+    <section class="certificates" id="MyCertificates">
+        <h1 class="certificatesHeading">My Certificates</h1>
+        <div class="certificateCards">
+            <!-- Certificate 1 -->
+            <div class="certificateCard">
+                <img src="./Assets/certificate1.png" alt="Certificate 1" class="certificateImage img-fluid">
+                <h3 class="certificateTitle">HTML Certificate</h3>
+                <p class="certificateDescription">Mastered the fundamentals of HTML, including semantic tags, page structure, and best practices for modern frontend development.</p>
+                <div class="certificateCardBtns">
+                    <a href="./Assets/HTMLCertificate.pdf" target="_blank">Download Certificate</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="certificate1Modal()">
+                    View Certificate
+                    </button>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="certificateCard">
+                <img src="./Assets/certificate2.png" alt="Certificate 2" class="certificateImage img-fluid">
+                <h3 class="certificateTitle">Coding Night Certificate</h3>
+                <p class="certificateDescription">Completed a 12Hrs Coding Night in Zaitoon Ashraf IT park by Saylani Mass IT Training.</p>
+                <div class="certificateCardBtns">
+                    <a href="./Assets/certificate2.pdf" target="_blank">Download Certificate</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="certificate2Modal()">
+                    View Certificate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Get In Touch Section -->
     <section class="getInTouch" id="GetInTouch">
         <h1 class="getInTouchHeading">Get In Touch</h1>
@@ -204,6 +255,26 @@
             </div>
         </div>
     </section>
+    <!-- Modals -->
+     <div class="modal fade" id="certificate1Modal" tabindex="-1" aria-labelledby="certificate1Modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="./Assets/certificate1.png" alt="Certificate 1" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="modal fade" id="certificate2Modal" tabindex="-1" aria-labelledby="certificate2Modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="./Assets/certificate2.png" alt="Certificate 2" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer -->
     <footer>
         <p>&copy; 2025 Farhan's Portfolio. All rights reserved.</p>
@@ -223,6 +294,19 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+    const certificate1Modal = () => {
+    const certificate1Modal = new bootstrap.Modal(
+        document.getElementById("certificate1Modal")
+    );
+    certificate1Modal.show();
+    };
 
+    const certificate2Modal = () => {
+    const certificate2Modal = new bootstrap.Modal(
+        document.getElementById("certificate2Modal")
+    );
+    certificate2Modal.show();
+    };
+</script>
 </html>
